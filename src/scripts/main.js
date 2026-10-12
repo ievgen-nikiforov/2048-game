@@ -36,7 +36,7 @@ function render() {
   msgWin.classList.toggle('hidden', currentStatus !== 'win');
   msgLose.classList.toggle('hidden', currentStatus !== 'lose');
 
-  if (currentStatus === 'win' || currentStatus === 'lose') {
+  if (currentStatus !== 'idle') {
     startBtn.textContent = 'Restart';
     startBtn.classList.remove('start');
     startBtn.classList.add('restart');
